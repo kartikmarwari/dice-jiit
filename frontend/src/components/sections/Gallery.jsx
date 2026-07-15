@@ -22,7 +22,7 @@ export default function Gallery() {
             </h2>
           </div>
           <div className="font-mono text-xs text-white/40 max-w-xs">
-            Edit <span className="text-white/70">/src/data/gallery.js</span> to add real photos.
+            <span className="text-white/70"> </span>  
           </div>
         </motion.div>
 
