@@ -1,6 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import MiniDice from "@/components/dice/MiniDice";
 import { Instagram, Linkedin, Github, Mail } from "lucide-react";
+import { site } from "@/data/site";
 
 export default function Footer() {
   return (
@@ -17,12 +18,12 @@ export default function Footer() {
               </Canvas>
             </div>
             <div>
-              <div className="font-display font-semibold text-xl">DICE</div>
+              <div className="font-display font-semibold text-xl">{site.club.name}</div>
               <div className="font-mono text-[11px] tracking-widest text-white/50">JIIT · NOIDA</div>
             </div>
           </div>
           <p className="mt-5 text-sm text-white/60 max-w-sm leading-relaxed">
-            Data, Insights, Computing & Engineering — the first math-first hub at JIIT bridging analytical thinking and data-driven technology.
+            {site.club.fullName} — the first math-first hub at JIIT bridging analytical thinking and data-driven technology.
           </p>
         </div>
 
@@ -47,10 +48,10 @@ export default function Footer() {
           <div className="font-mono text-[11px] tracking-widest text-white/50 mb-4">CONNECT</div>
           <div className="flex gap-3">
             {[
-              { Icon: Instagram, href: "#", label: "instagram" },
-              { Icon: Linkedin, href: "#", label: "linkedin" },
-              { Icon: Github, href: "#", label: "github" },
-              { Icon: Mail, href: "mailto:dice@jiit.ac.in", label: "email" },
+              { Icon: Instagram, href: site.socials.instagram, label: "instagram" },
+              { Icon: Linkedin, href: site.socials.linkedin, label: "linkedin" },
+              { Icon: Github, href: site.socials.github, label: "github" },
+              { Icon: Mail, href: `mailto:${site.contact.email}`, label: "email" },
             ].map(({ Icon, href, label }) => (
               <a key={label} href={href} data-testid={`footer-social-${label}`}
                  className="w-10 h-10 rounded-full glass flex items-center justify-center text-white/70 hover:text-white transition-colors">
@@ -59,12 +60,12 @@ export default function Footer() {
             ))}
           </div>
           <div className="mt-6 text-xs text-white/40">
-            Jaypee Institute of Information Technology, Noida
+            {site.club.college}
           </div>
         </div>
       </div>
       <div className="max-w-7xl mx-auto mt-12 pt-6 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-white/40">
-        <div>© {new Date().getFullYear()} DICE — Data, Insights, Computing & Engineering.</div>
+        <div>© {new Date().getFullYear()} {site.club.name} — {site.club.fullName}.</div>
         <div className="font-mono">v1.0 · built with curiosity</div>
       </div>
     </footer>

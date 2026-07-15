@@ -2,15 +2,7 @@ import { useRef } from "react";
 import { motion } from "framer-motion";
 import { Calendar, ArrowRight, ArrowLeft } from "lucide-react";
 import PlaceholderImage from "@/components/PlaceholderImage";
-
-const events = [
-  { title: "DataDive Workshop", date: "Mar 12, 2025", desc: "Hands-on intro to exploratory analysis with Python & pandas.", img: "event-1.jpg", tag: "Workshop" },
-  { title: "Math × ML Seminar", date: "Apr 04, 2025", desc: "How probability & linear algebra power modern ML systems.", img: "event-2.jpg", tag: "Seminar" },
-  { title: "Kaggle Sprint", date: "Apr 22, 2025", desc: "48-hour team competition on a real-world tabular dataset.", img: "event-3.jpg", tag: "Competition" },
-  { title: "Analytics Showcase", date: "May 10, 2025", desc: "Members present mini-projects — dashboards, models, and stories.", img: "event-4.jpg", tag: "Showcase" },
-  { title: "Guest Talk — Industry", date: "May 28, 2025", desc: "A data scientist from industry on real production ML pipelines.", img: "event-5.jpg", tag: "Talk" },
-  { title: "Fall Onboarding", date: "Aug 15, 2025", desc: "Meet the team, join a domain, ship your first project.", img: "event-6.jpg", tag: "Community" },
-];
+import { events } from "@/data/events";
 
 export default function Events() {
   const railRef = useRef(null);
@@ -52,7 +44,7 @@ export default function Events() {
         <div ref={railRef} className="rail flex gap-5 overflow-x-auto pb-4 -mx-6 px-6">
           {events.map((e, i) => (
             <motion.article
-              key={e.img}
+              key={e.placeholderLabel}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
@@ -61,7 +53,7 @@ export default function Events() {
               className="min-w-[300px] sm:min-w-[360px] max-w-[360px] glass overflow-hidden group"
             >
               <div className="relative">
-                <PlaceholderImage label={e.img} aspect="16/10" />
+                <PlaceholderImage src={e.photo} label={e.placeholderLabel} alt={e.title} aspect="16/10" />
                 <div className="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-mono tracking-widest uppercase bg-black/50 backdrop-blur-md border border-white/15">
                   {e.tag}
                 </div>

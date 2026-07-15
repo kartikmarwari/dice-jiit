@@ -2,12 +2,7 @@ import { motion } from "framer-motion";
 import { Mail } from "lucide-react";
 import TiltCard from "@/components/TiltCard";
 import PlaceholderImage from "@/components/PlaceholderImage";
-
-const faculty = [
-  { name: "Dr. Dinesh C.S. Bisht", role: "Faculty Coordinator", contact: "+919953130125", img: "faculty-1.jpg" },
-  { name: "Mishita Joshi", role: "Faculty Coordinator", contact: "+917625923537", img: "faculty-2.jpg" },
-  { name: "Priya Singh", role: "Faculty Coordinator", contact: "+918433102577", img: "faculty-3.jpg" },
-];
+import { faculty } from "@/data/faculty";
 
 export default function Faculty() {
   return (
@@ -31,7 +26,7 @@ export default function Faculty() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {faculty.map((f, i) => (
             <motion.div
-              key={f.img}
+              key={f.placeholderLabel}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
@@ -40,7 +35,14 @@ export default function Faculty() {
             >
               <TiltCard className="glass p-5 flex items-center gap-4" intensity={5}>
                 <div className="w-20 h-20 rounded-full overflow-hidden ring-1 ring-white/10 flex-shrink-0">
-                  <PlaceholderImage label={f.img} aspect="1/1" round showIcon={false} />
+                  <PlaceholderImage
+                    src={f.photo}
+                    label={f.placeholderLabel}
+                    alt={f.name}
+                    aspect="1/1"
+                    round
+                    showIcon={false}
+                  />
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="font-display text-base font-semibold truncate">{f.name}</div>

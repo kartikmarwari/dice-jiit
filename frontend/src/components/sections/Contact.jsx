@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import { Instagram, Linkedin, Mail, ArrowRight } from "lucide-react";
+import { site } from "@/data/site";
 
 export default function Contact() {
-  const email = "dice@jiit.ac.in";
+  const { email } = site.contact;
   const subject = encodeURIComponent("I'd like to join DICE");
   const body = encodeURIComponent(
     "Hi DICE team,\n\nI'm interested in joining the club. Here are a few details about me:\n\n- Name:\n- Batch / Year:\n- Domain interest (Data Science / Analytics / Engineering):\n- Anything you've built / studied:\n\nLooking forward to hearing from you!\n"
@@ -19,7 +20,6 @@ export default function Contact() {
           transition={{ duration: 0.7 }}
           className="glass p-8 sm:p-12 lg:p-16 relative overflow-hidden"
         >
-          {/* Ambient blobs */}
           <div className="absolute -top-24 -right-24 w-72 h-72 rounded-full pointer-events-none"
                style={{ background: "radial-gradient(circle, rgba(139,92,246,0.35), transparent 65%)" }} />
           <div className="absolute -bottom-32 -left-24 w-96 h-96 rounded-full pointer-events-none"
@@ -40,10 +40,10 @@ export default function Contact() {
               <a href={mailto} data-testid="join-cta-email" className="btn-primary">
                 Email us to join <ArrowRight size={16} />
               </a>
-              <a href="#" data-testid="join-cta-instagram" className="btn-ghost">
+              <a href={site.socials.instagram} data-testid="join-cta-instagram" className="btn-ghost">
                 <Instagram size={16} /> Instagram
               </a>
-              <a href="#" data-testid="join-cta-linkedin" className="btn-ghost">
+              <a href={site.socials.linkedin} data-testid="join-cta-linkedin" className="btn-ghost">
                 <Linkedin size={16} /> LinkedIn
               </a>
             </div>
@@ -57,11 +57,11 @@ export default function Contact() {
               </div>
               <div>
                 <div className="font-mono text-[10px] tracking-widest text-white/40 mb-2">LOCATION</div>
-                <div className="text-white/85">JIIT · Sector 62, Noida</div>
+                <div className="text-white/85">{site.club.location}</div>
               </div>
               <div>
                 <div className="font-mono text-[10px] tracking-widest text-white/40 mb-2">RESPONSE</div>
-                <div className="text-white/85">Within 2–3 days</div>
+                <div className="text-white/85">{site.contact.responseTime}</div>
               </div>
             </div>
           </div>
