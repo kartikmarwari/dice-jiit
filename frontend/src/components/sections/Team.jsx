@@ -4,7 +4,7 @@ import TiltCard from "@/components/TiltCard";
 import PlaceholderImage from "@/components/PlaceholderImage";
 import { team } from "@/data/team";
 
-const iconMap = { instagram: Instagram, linkedin: Linkedin, github: Github };
+const iconMap = { instagram: Instagram, linkedin: Linkedin };
 
 export default function Team() {
   return (

@@ -2,51 +2,20 @@
 // Add/edit events here. `photo` = URL/path (or null for gradient placeholder).
 export const events = [
   {
-    title: "DataDive Workshop",
-    date: "Mar 12, 2025",
+    title: "INCENDIO",
+     
     tag: "Workshop",
-    desc: "Hands-on intro to exploratory analysis with Python & pandas.",
-    photo: null,
+    desc: "A two-day immersive Data Analytics workshop introducing students to the fundamentals of data analysis, visualization, and problem-solving. Participants gained hands-on experience with Python and essential libraries like Pandas, NumPy, and Matplotlib, building a strong foundation in exploratory data analysis through practical exercises and guided learning.",
+    photo: "images/events/eve1.png",
     placeholderLabel: "event-1.jpg",
   },
   {
-    title: "Math × ML Seminar",
-    date: "Apr 04, 2025",
-    tag: "Seminar",
-    desc: "How probability & linear algebra power modern ML systems.",
-    photo: null,
+    title: "PredictX 1.0",
+    
+    tag: "Event",
+    desc: "PredictX 1.0 – INCENDIO marked the beginning of DICE’s mission to build a strong data-driven community at JIIT. This two-day flagship workshop brought together 46+ participants for an engaging learning experience where they explored Python for Data Analysis and applied their skills to a real-world predictive analytics challenge. Blending learning with competition, the event encouraged analytical thinking, teamwork, and the development of practical, real-world solutions.",
+    photo: "images/events/predictx.png",
     placeholderLabel: "event-2.jpg",
   },
-  {
-    title: "Kaggle Sprint",
-    date: "Apr 22, 2025",
-    tag: "Competition",
-    desc: "48-hour team competition on a real-world tabular dataset.",
-    photo: null,
-    placeholderLabel: "event-3.jpg",
-  },
-  {
-    title: "Analytics Showcase",
-    date: "May 10, 2025",
-    tag: "Showcase",
-    desc: "Members present mini-projects — dashboards, models, and stories.",
-    photo: null,
-    placeholderLabel: "event-4.jpg",
-  },
-  {
-    title: "Guest Talk — Industry",
-    date: "May 28, 2025",
-    tag: "Talk",
-    desc: "A data scientist from industry on real production ML pipelines.",
-    photo: null,
-    placeholderLabel: "event-5.jpg",
-  },
-  {
-    title: "Fall Onboarding",
-    date: "Aug 15, 2025",
-    tag: "Community",
-    desc: "Meet the team, join a domain, ship your first project.",
-    photo: null,
-    placeholderLabel: "event-6.jpg",
-  },
+   
 ];

@@ -7,12 +7,12 @@ export const site = {
     location: "JIIT · Sector 62, Noida",
   },
   contact: {
-    email: "dice@jiit.ac.in",
+    email: "jiitdice@gmail.com",
     responseTime: "Within 2–3 days",
   },
   socials: {
-    instagram: "#",
-    linkedin: "#",
-    github: "#",
+    instagram: "https://www.instagram.com/dice.jiit?igsh=MWs3YXg2bGw3dHhtcg==",
+    linkedin: "upcoming",
+     
   },
 };
