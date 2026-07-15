@@ -32,7 +32,7 @@ export default function Nav() {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         <a href="#top" className="flex items-center gap-3" data-testid="nav-logo">
            <img 
-    src="images/faculty/dice-logo-white.png" 
+    src="images/events/dice-logo-white.png" 
     alt="DICE Logo"
     className="h-8 md:h-10 object-contain"
   />
