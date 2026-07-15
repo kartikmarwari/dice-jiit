@@ -3,7 +3,7 @@ import PlaceholderImage from "@/components/PlaceholderImage";
 
 // Vary aspect ratios for masonry feel
 const items = [
-  { img: "gallery-1.jpg", aspect: "3/4" },
+  { img: "/app/DICE_5_b3409d5cd8.jpeg", aspect: "3/4" },
   { img: "gallery-2.jpg", aspect: "4/3" },
   { img: "gallery-3.jpg", aspect: "1/1" },
   { img: "gallery-4.jpg", aspect: "3/4" },

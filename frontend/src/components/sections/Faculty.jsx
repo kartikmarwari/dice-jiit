@@ -4,9 +4,9 @@ import TiltCard from "@/components/TiltCard";
 import PlaceholderImage from "@/components/PlaceholderImage";
 
 const faculty = [
-  { name: "Dr. Dinesh C.S. Bisht", role: "Faculty Coordinator", contact: "#", img: "faculty-1.jpg" },
-  { name: "Mishita Joshi", role: "Faculty Coordinator", contact: "#", img: "faculty-2.jpg" },
-  { name: "Priya Singh", role: "Faculty Coordinator", contact: "#", img: "faculty-3.jpg" },
+  { name: "Dr. Dinesh C.S. Bisht", role: "Faculty Coordinator", contact: "+919953130125", img: "faculty-1.jpg" },
+  { name: "Mishita Joshi", role: "Faculty Coordinator", contact: "+917625923537", img: "faculty-2.jpg" },
+  { name: "Priya Singh", role: "Faculty Coordinator", contact: "+918433102577", img: "faculty-3.jpg" },
 ];
 
 export default function Faculty() {

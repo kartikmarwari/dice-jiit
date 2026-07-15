@@ -4,14 +4,19 @@ import TiltCard from "@/components/TiltCard";
 import PlaceholderImage from "@/components/PlaceholderImage";
 
 const team = [
-  { name: "Team Member 1", role: "President", img: "core-team-1.jpg" },
-  { name: "Team Member 2", role: "Vice President", img: "core-team-2.jpg" },
-  { name: "Team Member 3", role: "Head — Data Science", img: "core-team-3.jpg" },
-  { name: "Team Member 4", role: "Head — Analytics", img: "core-team-4.jpg" },
-  { name: "Team Member 5", role: "Head — Engineering", img: "core-team-5.jpg" },
-  { name: "Team Member 6", role: "Head — Outreach", img: "core-team-6.jpg" },
-  { name: "Team Member 7", role: "Design Lead", img: "core-team-7.jpg" },
-  { name: "Team Member 8", role: "Events Lead", img: "core-team-8.jpg" },
+  { name: "Mishita Joshi", role: "President", img: "core-team-1.jpg" },
+  { name: "Priya Singh", role: "Vice President", img: "core-team-2.jpg" },
+  { name: "Kabir Arora", role: "Treasurer", img: "core-team-3.jpg" },
+  { name: "Kartik Marwari", role: "Web Master", img: "core-team-4.jpg" },
+  { name: "Ayush Chhabra", role: "Technical Head", img: "core-team-5.jpg" },
+  { name: "Suhani Dubey", role: "Technical Head", img: "core-team-6.jpg" },
+  { name: "Akshat Singh", role: "Tehnical Head", img: "core-team-7.jpg" },
+  { name: "Sparsh Agrawal", role: "Mathematics&Innovation Head", img: "core-team-8.jpg" },
+  { name: "Tushar Vats", role: "Organising Secretary", img:"C:\Users\karti\Downloads\IMG_7126.HEIC" },
+  { name: "Mritsa Singh", role: "Management Head", img: "core-team-8.jpg" },
+  { name: "Ayushi Tripathi", role: "Digital&Creative Head", img: "core-team-8.jpg" },
+  { name: "Lakshita Chawla", role: "PR&Marketing Head", img: "core-team-8.jpg" },
+  { name: "Akshi Bhusan", role: "Strategic Head", img: "core-team-8.jpg" },
 ];
 
 export default function Team() {
@@ -58,7 +63,7 @@ export default function Team() {
                 </div>
                 <div className="flex gap-2 mt-4">
                   {[Instagram, Linkedin, Github].map((Icon, k) => (
-                    <a key={k} href="#" data-testid={`team-${i}-social-${k}`}
+                    <a key={k} href="m." data-testid={`team-${i}-social-${k}`}
                        className="w-7 h-7 rounded-full flex items-center justify-center border border-white/10 text-white/60 hover:text-white hover:border-violet-400/50 transition-colors">
                       <Icon size={12} />
                     </a>
