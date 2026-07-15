@@ -31,13 +31,11 @@ export default function Nav() {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         <a href="#top" className="flex items-center gap-3" data-testid="nav-logo">
-          <div className="w-8 h-8 rounded-md relative" style={{
-            background: "linear-gradient(135deg, #22d3ee, #3b82f6 50%, #8b5cf6)",
-            boxShadow: "0 0 20px -4px rgba(139,92,246,0.6)"
-          }}>
-            <span className="absolute inset-0 flex items-center justify-center font-mono text-[10px] font-bold text-[#0a0a12]">D</span>
-          </div>
-          <span className="font-display font-semibold tracking-tight text-lg">DICE</span>
+           <img 
+    src="images/faculty/dice-logo-white.png" 
+    alt="DICE Logo"
+    className="h-8 md:h-10 object-contain"
+  />
         </a>
         <div className="hidden md:flex items-center gap-1">
           {links.map((l) => (
