@@ -88,7 +88,7 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.4 }}
             className="mt-6 text-base sm:text-lg text-white/60 max-w-xl leading-relaxed"
           >
-            JIIT's first math-first hub — where analytical thinking meets data-driven technology through workshops, projects, and competitions.
+            JIIT's hub for data science, analytics & computing — where curiosity meets code through workshops, projects, and competitions.
           </motion.p>
 
           <motion.div

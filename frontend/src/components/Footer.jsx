@@ -23,7 +23,7 @@ export default function Footer() {
             </div>
           </div>
           <p className="mt-5 text-sm text-white/60 max-w-sm leading-relaxed">
-            {site.club.fullName} — the first math-first hub at JIIT bridging analytical thinking and data-driven technology.
+            {site.club.fullName} — JIIT's hub for data science, analytics, and computing, powered by a strong mathematical foundation.
           </p>
         </div>
 

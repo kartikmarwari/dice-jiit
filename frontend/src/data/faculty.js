@@ -8,13 +8,13 @@ export const faculty = [
   },
   {
     name: "Mishita Joshi",
-    role: "Faculty Coordinator",
+    role: "President",
     contact: "mailto:joshimishita11@gmail.com",
     photo: "images/team/mj.jpeg",
   },
   {
     name: "Priya Singh",
-    role: "Faculty Coordinator",
+    role: "Vice President",
     contact: "mailto:priyasingh26012@gmail.com",
     photo: "images/team/priya.png",
   },

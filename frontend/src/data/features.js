@@ -2,21 +2,21 @@
 // Icons are lucide-react components; imported in the section file.
 export const features = [
   {
-    iconName: "Sigma",
-    title: "Math-first Foundation",
-    desc: "Every project starts with the math. We treat probability, linear algebra, and statistics as first-class citizens.",
+    iconName: "FlaskConical",
+    title: "Data Science & Analytics",
+    desc: "From EDA and dashboards to ML models — hands-on work with real datasets and open problems.",
     hue: "#22d3ee",
   },
   {
-    iconName: "FlaskConical",
-    title: "Real-world Projects",
-    desc: "Hands-on mini-projects, hackathons, and competitions built on real datasets and open problems.",
+    iconName: "Sigma",
+    title: "Mathematical Foundation",
+    desc: "Strong grounding in probability, linear algebra, and statistics — the language behind every good model.",
     hue: "#3b82f6",
   },
   {
     iconName: "Network",
     title: "Cross-domain Collaboration",
-    desc: "We connect CS, math, and engineering minds to build ideas that live at the intersections.",
+    desc: "We connect data, code, and engineering minds to build ideas that live at the intersections.",
     hue: "#8b5cf6",
   },
   {

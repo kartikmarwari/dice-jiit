@@ -14,7 +14,7 @@ export default function About() {
             01 / ABOUT
           </div>
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-semibold leading-[0.95]">
-            The <span className="gradient-text">first</span> math-first hub at JIIT.
+            JIIT's hub for <span className="gradient-text">data science, analytics</span> & computing.
           </h2>
         </motion.div>
         <motion.div
@@ -26,13 +26,13 @@ export default function About() {
         >
           <p>
             DICE is a newly established hub at JIIT focused on
-            <span className="text-white"> data science, analytics, and computational techniques </span>
-            — with a strong mathematics-oriented foundation.
+            <span className="text-white"> data science, analytics, machine learning, and computational techniques </span>
+            — powered by a strong mathematical foundation.
           </p>
           <p>
-            We are the first hub at the college with a dedicated focus on
-            <span className="text-white"> mathematical thinking and analytical skills </span>
-            applied to data-driven technology.
+            We are the first hub at the college dedicated to
+            <span className="text-white"> data-driven technology and analytical thinking </span>
+            — spanning ML, statistics, visualization, and applied computing.
           </p>
           <p>
             We bridge theory and practice through mini-projects, workshops, seminars, and competitions — building a community where curiosity compounds into capability.
@@ -41,7 +41,7 @@ export default function About() {
           <div className="grid grid-cols-3 gap-4 pt-6">
             {[
               ["04+", "Domains"],
-              ["100%", "Math-first"],
+              ["ML+DS", "Focus"],
               ["24/7", "Curiosity"],
             ].map(([n, l]) => (
               <div key={l} className="glass p-4">
